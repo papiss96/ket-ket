@@ -19,7 +19,7 @@ class CreateTerrainsTable extends Migration
             $table->string('id_gerant');
             $table->float('longueur');
             $table->float('largeur');
-            $table->int('joueurs');
+            $table->integer('joueurs');
             $table->float('prixHeure');
             $table->string('statut');
             $table->string('idPhotos');

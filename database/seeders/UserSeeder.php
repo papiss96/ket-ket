@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
         $faker = \Faker\Factory::create();
 
        
-        $password = Hash::make('toptal');
+        $password = Hash::make('papiss');
 
         User::create([
             'name' => 'Administrator',

@@ -8,8 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Creneaux extends Model
 {
     use HasFactory;
-            'id_terrain';
-            'dateDebut';
-            'dateFin';
-            'statut';
+    protected $fillable = [
+            'id_terrain',
+            'dateDebut',
+            'dateFin',
+            'statut'
+    ];
 }

@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class MobileMoney extends Model
 {
     use HasFactory;
-        'numero_envoie';
-        'numero_reception';
+    protected $fillable = [
+        'numero_envoie',
+        'numero_reception'
+    ];
 }

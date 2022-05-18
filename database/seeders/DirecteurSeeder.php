@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class ReservationSeeder extends Seeder
+class DirecteurSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +13,6 @@ class ReservationSeeder extends Seeder
      */
     public function run()
     {
-        User::factory()->count(10)->create();
+        //
     }
 }

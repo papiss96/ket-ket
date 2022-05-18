@@ -13,7 +13,7 @@ class TerrainController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index():
+    public function index()
     {
         
         return Terrain::all();
@@ -28,19 +28,19 @@ class TerrainController extends Controller
      */
     public function store(Request $request)
     {
+        //Terrain::create($request->all());
+
         $terrain = Terrain::create([
-
-
-        'idComplexeSportif'=> $request->idComplexeSportif;
-        'id_gerant'=> $request->id_gerant;
-        'longueur'=> $request->longueur;
-        'largeur'=> $request->largeur;
-        'joueurs'=> $request->joueurs;
-        'prixHeure'=> $request->prixHeure;
-        'statut'=> $request->statut;
-        'idPhotos'=> $request->idProtos;
-        'type'=> $request->type;
-        'localisation'=> $request->localisation;
+        'idComplexeSportif'=> $request->idComplexeSportif,
+        'id_gerant'=> $request->id_gerant,
+        'longueur'=> $request->longueur,
+        'largeur'=> $request->largeur,
+        'joueurs'=> $request->joueurs,
+        'prixHeure'=> $request->prixHeure,
+        'statut'=> $request->statut,
+        'idPhotos'=> $request->idProtos,
+        'type'=> $request->type,
+        'localisation'=> $request->localisation
 
             //si le terrainn doit avoir une image 
             //'image_url' => $request->image_url

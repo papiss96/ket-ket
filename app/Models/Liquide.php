@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Liquide extends Model
 {
     use HasFactory;
-        'id_gerant';
-        'nom_reception';
+    protected $fillable = [
+        'id_gerant',
+        'nom_reception'
+    ];
 }

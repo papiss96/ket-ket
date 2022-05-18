@@ -10,15 +10,15 @@ class Terrain extends Model
     use HasFactory;
     protected $fillable = [
         
-        'idComplexeSportif';
-        'id_gerant';
-        'longueur';
-        'largeur';
-        'joueurs';
-        'prixHeure';
-        'statut';
-        'idPhotos';
-        'type';
-        'localisation';
-    ]
+        'idComplexeSportif',
+        'id_gerant',
+        'longueur',
+        'largeur',
+        'joueurs',
+        'prixHeure',
+        'statut',
+        'idPhotos',
+        'type',
+        'localisation'
+    ];
 }
